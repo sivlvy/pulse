@@ -1,0 +1,87 @@
+@media screen and ( max-width: 768px) {
+   .header {
+      padding: 0 25px;
+      &__phone {
+         margin-bottom: 4px;
+      }
+   }
+   .promo {
+      &__wrapper {
+         margin-right: 10px;
+      }
+   }
+   .advantages {
+      &__wrapper {
+         margin: 0 4px;
+      }
+   }
+   .consultation {
+      padding-left: 30px;
+   }
+}
+
+@media screen and (max-width: 575px) {
+   .header {
+      &__phone {
+         font-size: 13px;
+      }
+      &__logo {
+         width: 200px;
+      }
+      &__logo img {
+         margin-left: -4px;
+      }
+      &__official {
+         font-size: 10px;
+      }
+      &__official span {
+         font-size: 9px;
+      }
+   }
+   .promo {
+      &__header {
+         font-size: 30px;
+      }
+      &__subtitle {
+         font-size: 15px;
+      }
+      &__icons {
+         width: 90%;
+         margin:67px auto 68px auto;
+      }
+   }
+   .button {
+      width: 119px;
+      font-size: 9px;
+      &_submit {
+         width: 100%;
+         font-size: 12px;
+      }
+   }
+   .button_main {
+      width: 163px;
+      font-size: 11px;
+   }
+   .advantages {
+      &__wrapper {
+         flex-direction: column;
+         align-items: center;
+      } &__text {
+         margin-bottom: 35px;
+      }
+      &__text:last-child {
+         margin-bottom: 0;
+      }
+   }
+   .title_left {
+      font-size: 33px;
+   }
+   .consultation {
+      padding-left: 10px;
+   }
+   .carousel {
+      &__inner {
+         width: 100%;
+      }
+   }
+}
