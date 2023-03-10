@@ -1,0 +1,40 @@
+.review {
+   min-height: 925px;
+
+   &__item {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 102px;
+   }
+
+   &__img {
+      width: 169px;
+      height: 169px;
+   }
+
+   &__text {
+      width: 650px;
+      margin-left: 62px;
+   }
+
+   &__name {
+      font-weight: 700;
+      font-size: 18px;
+      color: #0d0d0d;
+   }
+
+   &__maraphon {
+      font-size: 14px;
+      font-weight: 300;
+      color: #646464;
+      margin-top: 10px;
+   }
+
+   &__descr {
+      font-size: 16px;
+      font-weight: 300;
+      color:#0d0d0d;
+      margin-top: 19px;
+      line-height: 20px;
+   }
+}
