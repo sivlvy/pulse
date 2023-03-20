@@ -1,9 +1,13 @@
+@import '../css/blocks/libs/slick';
+@import '../css/blocks/libs/animation';
+
 
 @import 'blocks/_animations.scss';
 
 * {
    font-family: 'Museo Sans Cyrl', sans-serif;
 }
+
 
 .container {
    max-width: 950px;
