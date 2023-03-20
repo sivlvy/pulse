@@ -113,7 +113,7 @@ validateForms('#order form')
 
 $('input[name=phone]').mask("+38 (999) 999-99-99");
 
-$('form').sumbit(function(e) {
+$('form').submit(function(e) {
       e.preventDefault();
 
       if (!$(this).valid()) {
@@ -134,4 +134,30 @@ $('form').sumbit(function(e) {
       });
       return false;
    });
+
+
+   $(window).scroll(function() {
+      if ($(this).scrollTop() > 1000 ) {
+         $('.pageup').fadeIn('slow')
+      } else {
+         $('.pageup').fadeOut();
+      }
+   });
+
+   $("a").on('click', function(event) {
+      if (this.hash !== "") {
+      event.preventDefault();
+
+      var hash = this.hash;
+
+      $('html, body').animate({
+         scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+         window.location.hash = hash;
+      });
+      }
+   });
+
+   new WOW().init();
 });
